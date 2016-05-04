@@ -1,0 +1,29 @@
+{
+    "name": "tebru/random",
+    "description": "A random number provider",
+    "require": {
+        "tebru/retrofit-php": "^2.8",
+        "monolog/monolog": "^1.19",
+        "guzzlehttp/guzzle": "^6.2",
+        "symfony/console": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tebru\\Random\\": "src/",
+            "Tebru\\Retrofit\\Generated\\": "var/retrofit/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nate Brunette",
+            "email": "n@tebru.net"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "vendor/bin/retrofit compile src/Client var/"
+        ]
+
+    }
+}
