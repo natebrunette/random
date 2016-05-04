@@ -2,6 +2,7 @@
     "name": "tebru/random",
     "description": "A random number provider",
     "require": {
+        "php": ">= 7.0",
         "tebru/retrofit-php": "^2.8",
         "monolog/monolog": "^1.19",
         "guzzlehttp/guzzle": "^6.2",
